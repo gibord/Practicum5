@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         if (savedInstanceState == null) {
-            FragmentNote noteFragment = FragmentNote.newInstance();
+            FragmentNote noteFragment = FragmentNote.newInstance("notes", null);
             getSupportFragmentManager().beginTransaction().replace(R.id.note, noteFragment).commit();
         }
         FloatingActionButton fab = findViewById(R.id.fab);
